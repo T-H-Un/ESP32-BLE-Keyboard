@@ -156,8 +156,10 @@ public:
   void sendReport(KeyReport* keys);
   void sendReport(MediaKeyReport* keys);
   size_t press(uint8_t k);
+  size_t HIDpress(uint8_t k);
   size_t press(const MediaKeyReport k);
   size_t release(uint8_t k);
+  size_t HIDrelease(uint8_t k);
   size_t release(const MediaKeyReport k);
   size_t write(uint8_t c);
   size_t write(const MediaKeyReport c);
